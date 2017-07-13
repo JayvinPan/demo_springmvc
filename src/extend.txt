@@ -1,0 +1,9 @@
+    1.引入js的方法：
+      1.1 servlet配置：
+        <mvc:resources location="/resources/" mapping="/resources/**"/><!--两个*表示resources里所有文件夹里的内容，包括子文件夹，1个*反之-->
+        在jsp页面即可使用：
+        <link rel="stylesheet" href="<%=request.getContextPath()%>/resources/css/main.css" type="text/css">
+      1.2 servlet配置：
+        <mvc:resources mapping="/css/**" location="/css/" />
+        在jsp页面使用：
+        <link rel="stylesheet" href="/resources/css/main.css" type="text/css">
